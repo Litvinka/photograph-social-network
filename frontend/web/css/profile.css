@@ -1,0 +1,901 @@
+/* 
+    Created on : 11.04.2017, 20:06:56
+    Author     : Masha
+*/
+
+/*PROFILE STYLES*/
+
+.information{
+    width:100%;
+    display:flex;
+    background-color: #dfe8ed;
+    justify-content:space-between;
+    padding-top:25px;
+    padding-bottom:60px;
+}
+/* LOCAL NAV */
+.local_nav{
+    width:15%;
+    margin-left:10%;
+    background-color:#ffffff;
+    border:1px solid gray;
+    padding:20px;
+    border-radius:15px;
+    height:295px;
+}
+.local_nav li img{
+    width:21px;
+    height:21px;
+    margin-right:7px;
+}
+.local_nav li{
+    line-height: 25px;
+    padding-bottom:5px;
+}
+.local_nav li:last-child{
+    margin-top:5px;
+    padding-top:5px;
+    border-top:1px solid gray;
+}
+.local_nav li a{
+    color:#7d7d7d;
+    font-size:14px;
+    font-family: Segoe WP;
+    font-weight: bold;
+}
+.local_nav li a:hover{
+    text-decoration:none;
+    color:#17475d;
+}
+#local_nav .active a{
+    color:#17475d;
+}
+/* LOCAL NAV (end) */
+.inform{
+    margin-right:10%;
+    width:58%;
+}
+/*Моя страница*/
+#profile{
+    display:flex;
+    border-radius:15px;
+    background-color:#ffffff;
+    border:1px solid gray;
+    padding:20px;
+    margin-bottom:20px;
+    max-width:100%;
+}
+.profile_photo{
+    width:130px;
+    margin-right:3%;
+    position: relative;
+}
+#p_avatar{
+    position: relative;
+    overflow: hidden;
+    border:1px solid gray;
+    width:130px;
+    height:130px;
+    border-radius: 50%;
+}
+.profile_photo #avatar{
+    position: relative;
+}
+.profile_photo>p{
+    color:#7d7d7d;
+    font-size:11px;
+    text-align: center;
+}
+.profile_inform{
+    width:72%;
+}
+.profile_inform dl{
+    display:flex;
+    margin-bottom:5px;
+    font-size:13px;
+}
+.profile_inform dt{
+    width:30%;
+    color:#7d7d7d;
+    font-weight:500;
+}
+.profile_inform dd{
+    width:70%;
+    color:#17475d;
+}
+.profile_inform h3{
+    font-size: 24px;
+    color:#17475d;
+    font-weight:bold;
+    margin-bottom:30px;
+}
+.profile_inform>p{
+    font-size:13px;
+    width:100%;
+    font-weight:bold;
+    border-bottom:1px solid #666666;
+    color:#666666;
+    margin-bottom:10px;
+    margin-top:20px;
+}
+.profile_photos{
+    padding:20px;
+    border-radius:15px;
+    background-color:#ffffff;
+    border:1px solid gray;
+}
+.profile_photos h3{
+    font-size:22px;
+    font-weight:bold;
+    color:#17475d;
+    text-align: center;
+    margin-bottom:30px;
+}
+.profile_photos p{
+    text-align: center;
+    font-weight:bold;
+    margin-bottom:10px;
+    margin-top:25px;
+}
+.button{
+    width:220px;
+    height:36px;
+    background-color: #17475d;
+    color:white;
+    border:1px solid gray;
+    border-radius:20px;  
+    font-size:14px;
+    outline:none;
+}
+#prof_photos #w1{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#prof_photos #w1 div{
+    width:25%;
+    padding:2px;
+}
+.profile_photos article figure{ 
+    width:25%;
+    overflow: hidden;
+    position: relative;
+}
+.profile_photos article figure img{
+    max-width:100%;
+    position: relative;
+    padding:5px;
+}
+#sents_button{
+    width:100%;
+    height:26px;
+    background-color: #17475d;
+    color:white;
+    border:1px solid gray;
+    border-radius:20px;  
+    font-size:11px;
+    font-family:Segoe WP;
+    outline:none;
+    margin-top:10px;
+}
+.edit_img a{
+    text-decoration: none;
+    font-family:Segoe WP;
+    color:#666666;
+}
+.button a{
+    color:white;
+    text-decoration:none;
+}
+.avatar_close{
+    position:absolute;
+    top:5px;
+    right:5px;
+    opacity:0.7;
+}
+/*Моя страница (end))*/
+
+/*НАСТРОЙКИ */
+#update{
+    border-radius:20px;
+    background-color: white;
+    border:1px solid gray;
+    padding:20px;
+}
+#update h4{
+    font-weight: bold;
+    color:#17475d;
+    font-size:15px;
+    margin-bottom:30px;
+}
+.form_update p{
+    text-align: right;
+    margin-top:40px;
+    margin-bottom:10px;
+}
+.form_update label{
+    width:20%;
+    float:left;
+    font-size:12px;
+    color:#17475d;
+}
+.form_update input{
+    width:50%;
+    height:25px;
+    font-size:12px;
+}
+.form_update select{
+    width:50%;
+    height:30px;
+    font-size:12px;
+}
+.form_update textarea{
+    width:80%;
+    font-size:12px;
+    resize:none;
+}
+#spec{
+    width:80%;
+    margin-left: 20%;
+    font-size:12px;
+    display:flex;
+    flex-wrap:wrap;
+    margin-bottom:10px;
+}
+#spec input{
+    width:20px;
+}
+#spec label{
+    width:50%;
+    color:#666666;
+    font-size: 12px;
+}
+.required label:after{
+     content: "*"; 
+     color: red; 
+ }
+#spec label:after{
+    display:none;
+}
+.field-photographresume-published{
+    width:100%;
+    margin-top:-50px;
+    padding-bottom:30px;
+}
+.field-photographresume-published label{
+    width:40%;
+    margin-left:60%;
+    line-height:20px;
+    vertical-align:baseline;
+    text-align:right;
+    margin-right:10px;
+    color:#666666;
+    font-size:11px;
+}
+#photographresume-published{
+    float:right;
+    width:15px;
+    height:15px;
+    margin-left:10px;
+}
+ .form_update h5{
+    font-size:13px;
+    width:100%;
+    font-weight:bold;
+    border-bottom:1px solid #666666;
+    color:#666666;
+    margin-bottom:20px;
+    margin-top:30px;
+ }
+ #views{
+    border-radius:20px;
+    background-color: white;
+    border:1px solid gray;
+    padding:20px;
+ }
+ #views dl{
+    display:flex;
+    margin-bottom:5px;
+    font-size:13px;
+}
+#views dt{
+    width:30%;
+    color:#7d7d7d;
+    font-weight:500;
+}
+#views dd{
+    width:70%;
+    color:#17475d;
+}
+#views h4{
+    font-weight: bold;
+    color:#17475d;
+    font-size:15px;
+    margin-bottom:30px;
+}
+/*НАСТРОЙКИ (end) */
+
+/* ЗАГРУЗКА АВАТАРА */
+#avatarka{
+    width:100%;
+    margin-bottom:20px;
+    border:1px solid gray;
+}
+#upload_form label{
+    font-size:12px;
+    color:#17475d;
+}
+#upload_form input{
+    margin-bottom:20px;
+}
+
+/* ЗАГРУЗКА АВАТАРА (end) */
+
+/*РЕЗЮМЕ*/
+.pricetype{
+    width:100%;
+    display:block;
+    margin-bottom:5px;
+}
+.pricetype label{
+    width:20%;
+}
+.pricetype input{
+    width:100px;
+}
+.pricetype select{
+    width:60px;
+}
+/*РЕЗЮМЕ (end)*/
+
+/*ДРУЗЬЯ */
+.buttons{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+#friends{
+    border-radius:20px;
+    background-color: white;
+    border:1px solid gray;
+    padding:20px;
+}
+.friend_nav{
+    display:flex;
+    justify-content:space-between;
+    width:55%;
+    font-family: Segoe WP;
+    font-size:14px; 
+    font-weight:bold;
+    margin-bottom:30px;
+}
+.friend_nav a{
+    color:#666666;
+    text-decoration:underline;
+}
+.friend_nav .friend_nav_active a{
+    color:#17475d;
+}
+/*ДРУЗЬЯ (END)) */
+
+/*СООБЩЕНИЯ */
+#message{
+    border-radius:20px;
+    background-color: white;
+    border:1px solid gray;
+    padding:20px;
+}
+.message_nav{
+    display:flex;
+    width:40%;
+    font-family: Segoe WP;
+    font-size:14px; 
+    font-weight:bold;
+    margin-bottom:30px;
+}
+.message_nav li{
+    margin-right:30px;
+}
+.message_nav a{
+    color:#666666;
+    text-decoration:underline;
+}
+.message_nav .message_nav_active a{
+    color:#17475d;
+}
+.message-item{
+    position:relative;
+    margin-bottom:20px;
+    padding:10px;
+    border:1px solid gray;
+    border-radius:15px;
+    background-color:#ffffff;
+    width:100%; 
+    height:70px;
+    display:flex;
+    justify-content:space-between;
+}
+.message-item figure{
+    display:flex;
+    width:100%;
+    border:0px;
+    border-radius:50%;
+}
+.message-item a:hover h4{
+    text-decoration:none;
+}
+.photos_message{
+    background-color:#dfe8ed;
+    width:50px;
+    height:50px;
+    overflow:hidden;
+    border-radius: 50%;
+    border:1px solid gray;
+    margin-right:15px;
+}
+.photo_friend{
+    position:relative;
+}
+.message-item .profile_name{
+    color:#17475d;
+    font-size:14px;
+    font-weight:bold;
+    font-family:Segoe WP;
+    margin-top:-5px;
+}
+.message_thema{
+    color:#666666;
+    font-size:12px;
+    font-weight:bolder;
+    font-family:Segoe WP;
+}
+.message-item .button{
+    font-size:13px;
+    font-family:Segoe WP;
+    height:30px;
+    width:190px;
+    margin-top:50px;
+}
+.message-item a{
+    color:white;
+    text-decoration:none;
+}
+.message-item a:hover{
+    text-decoration:none;
+}
+.mess_unread{
+    border-color:#17475d;
+    background-color: #ebebeb;
+}
+.message_text{
+    width:100%;
+    color:#666666;
+    font-size:11px;
+    height:18px;
+    overflow:hidden;
+    text-overflow: clip;
+}
+#w0>div>a {
+    text-decoration: none;
+}
+/*СООБЩЕНИЯ (END)) */
+
+/*ПРОСМОТР СООБЩЕНИЯ*/
+.imgclose{
+    cursor:pointer;
+    position:absolute;
+    right:5px;
+    top:5px;
+    width:18px;
+    height:18px;
+}
+.mess_title{
+    position:absolute;
+    text-align: center;
+    top:5px;
+    font-weight: bold;
+    font-family: Segoe WP;
+    font-size:16px;
+    width:100%;
+    color:#666666;
+    right:0px;
+}
+.one_message{
+    position: relative;
+    padding:20px;
+    border:1px solid gray;
+    border-radius:15px;
+}
+.one_message dl{
+    display:flex;
+    margin-bottom:5px;
+    font-size:13px;
+}
+.one_message dt{
+    width:20%;
+    color:#7d7d7d;
+    font-weight:500;
+}
+.one_message dd{
+    width:80%;
+    color:#17475d;
+}
+.dl_first{
+    margin-top:10px;
+}
+.one_message .bt_p{
+    text-align: right;
+    margin-top:30px;
+}
+.one_message .bt_p .button{
+    width:200px;
+}
+/*ПРОСМОТР СООБЩЕНИЯ (end)*/
+
+/* ВСПЛЫВАЮЩЕЕ ОКНО */
+.formsbg{
+    display:none;
+    position: fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    background-color:black;
+    opacity:0.6;
+    z-index: 1;
+}
+.forms{
+    position: fixed;
+    width:50%;
+    left:25%;
+    top:20%;
+    display:none;
+    background-color: white;
+    padding:20px;
+    border-radius: 15px;
+    z-index:2;
+    box-shadow:0 0 50px #1a1f1f; 
+}
+.forms textarea{
+    resize: none;
+    width:100%;
+}
+.forms input{
+    width:100%;
+}
+/* ВСПЛЫВАЮЩЕЕ ОКНО (end) */
+
+/* БЛОГ */
+#blog{
+    border-radius:20px;
+    background-color: white;
+    border:1px solid gray;
+    padding:20px;
+}
+.blog_nav{
+    display:flex;
+    width:40%;
+    font-family: Segoe WP;
+    font-size:14px; 
+    font-weight:bold;
+    margin-bottom:30px;
+}
+.blog_nav li{
+    margin-right:30px;
+}
+.blog_nav a{
+    color:#666666;
+    text-decoration:underline;
+}
+#blog .button a{
+    color:white;
+    text-decoration: none;
+}
+.blog_nav .blog_nav_active a{
+    color:#17475d;
+}
+.small_img{
+    max-width:100px;
+    margin-bottom:10px;
+}
+.blog-item{
+    padding:15px;
+    margin-bottom:20px;
+    border:1px solid gray;
+    border-radius:15px;
+    background-color:#ffffff;
+    width:100%; 
+    height:305px;
+}
+.blog_top a, .blog-item>a{
+    text-decoration: none;
+}
+.blog_top{
+    display:flex;
+    justify-content:space-between;
+    margin-top:-5px;
+    margin-bottom:12px;
+}
+.blog_top h3{
+    font-size:20px;
+    font-family: Segoe WP;
+    font-weight: lighter;
+    color:#17475d;
+    margin-bottom:2px;
+}
+.blog_top h6, .blog_bottom h6{
+    font-size:12px;
+    font-family: Segoe WP;
+    font-weight: lighter;
+    color:#666666;
+}
+.icons{
+    height:18px;
+}
+.blog_center{
+    display:flex;
+    height:180px;
+    justify-content:flex-start;
+    overflow:hidden;
+    margin-bottom:10px;
+}
+.blog_center_photo{
+    min-width: 270px;
+    width:270px;
+    height:180px;
+    position: relative;
+    overflow: hidden;
+    margin-right:10px;
+    border:1px solid gray;
+}
+.blog_center img{
+    position: relative;   
+}
+.blog_center p{
+    text-align:justify;
+    color:#666666;
+    font-size:13px;
+}
+.blog_h6{
+    color:#17475d;
+}
+.blog_bottom{
+    display:flex;
+    justify-content:space-between;
+}
+.blog_bottom ul{
+    display:flex;
+    justify-content: flex-end;
+}
+.blog_bottom ul li{
+    margin-left:20px;
+    padding-top:10px;
+}
+.blog_bottom ul li img{
+    height:15px;
+}
+.blog_center1 img{
+    position: relative;  
+}
+.blog_center_photo1{
+    min-width: 270px;
+    width:270px;
+    height:180px;
+    position: relative;
+    overflow: hidden;
+    margin-right:10px;
+    border:1px solid gray;
+    float:left;
+}
+.blog_center1 p{
+    text-align:justify;
+    color:#666666;
+    font-size:13px;
+    margin-bottom:10px;
+    min-height: 180px;
+}
+.blog-item{
+    margin-bottom:20px;
+    background-color:#ffffff;
+    width:100%; 
+}
+/* БЛОГ (end) */
+
+/* COMMENTS */
+#comments{
+    margin-top:20px;
+}
+#comments>h4{
+    font-size: 18px;
+    color:#17475d;
+    font-family: Segoe WP;
+    margin-bottom:15px;
+}
+.blog-post-comments-form{
+    padding:15px;
+    border:1px solid gray;
+    border-radius:15px;
+    margin-top:25px;
+    margin-bottom:10px;
+}
+.blog-post-comments-form p{
+    margin-top:20px;
+}
+.blog-post-comments-form>h4{
+    margin-bottom:20px;
+    text-align: center;
+    font-size:16px;
+    color:#666666;
+    font-family: Segoe WP;
+}
+.comment{
+    width:100%;
+    padding:10px 15px 10px 15px;
+    border:1px solid gray;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+.comment h5{
+    font-size:13px;
+    font-family: Segoe WP;
+    color:#17475d;
+    margin-bottom:-2px;
+}
+.comment h6{
+    font-size:10px;
+    font-family: Segoe WP;
+    color:#666666;
+    margin-bottom:5px;
+}
+.comment img{
+    height:100px;
+    margin-right:10px;
+    float:left;
+}
+.comment p{
+    font-size:13px;
+    color:#666666;
+    text-align: justify;
+}
+.comment>section{
+    min-height:100px;
+    margin-bottom:5px;
+}
+/* COMMENTS (end) */
+
+/* PHOTOS */
+#photoblock{
+    border-radius:20px;
+    background-color: white;
+    border:1px solid gray;
+    padding:20px;
+}
+.photoblock_nav{
+    display:flex;
+    width:40%;
+    font-family: Segoe WP;
+    font-size:14px; 
+    font-weight:bold;
+    margin-bottom:30px;
+}
+.photoblock_nav li{
+    margin-right:30px;
+}
+.photoblock_nav a{
+    color:#666666;
+    text-decoration:underline;
+}
+#photoblock .button a{
+    color:white;
+    text-decoration: none;
+}
+.photoblock_nav .photoblock_nav_active a{
+    color:#17475d;
+}
+.all_photos #w0{
+    display: flex;
+    flex-wrap: wrap;
+    &::after {
+      content: '';
+      flex-grow: 999999999;
+    }   
+}
+.all_photos #w0>div{
+    margin: 2px;
+    position: relative;
+    height: 200px;  
+}
+.photo-item-img{
+    max-width: 100%;
+    min-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+.photo-item-img:hover{
+    cursor:pointer;
+}
+.all_photos #w0>div hgroup{
+    background-color:#dfe8ed;
+    opacity:0.7;
+    height:40px;
+    padding:3px 10px 3px 10px;
+    position:absolute;
+    left:0px;
+    right:0px;
+    color:#17475d;
+    bottom:0px;
+    display:none;
+}
+.all_photos #w0>div hgroup h6{
+    font-size:11px;
+    margin-top:-2px;
+}
+.photo_about{
+    font-size:13px;
+    font-family:Segoe WP;  
+}
+.image_properties{
+    display:none;
+    position:absolute;
+    right:5px;
+    top:5px;
+    opacity:0.6;
+}
+/* PHOTOS (end) */
+
+
+/* APPLICATION */
+#application_view{
+    position:relative;
+    border-radius:20px;
+    background-color: white;
+    border:1px solid gray;
+    padding:20px;
+}
+#application_view dl{
+    display:flex;
+    margin-bottom:5px;
+    font-size:13px;
+}
+#application_view dt{
+    width:30%;
+    color:#7d7d7d;
+    font-weight:500;
+}
+#application_view dd{
+    width:70%;
+    color:#17475d;
+}
+#application_view .icon_p{
+    text-align:right;
+    position:absolute;
+    top:17px;
+    right:10px;
+}
+.application_bt{
+    position:absolute;
+    bottom:30px;
+    right:10px;
+}
+.application_nav{
+    display:flex;
+    width:60%;
+    font-family: Segoe WP;
+    font-size:14px; 
+    font-weight:bold;
+    margin-bottom:30px;
+    color:#666666;
+}
+.application_nav li{
+    margin-right:30px;
+}
+.application_nav a{
+    color:#666666;
+    text-decoration:underline;
+}
+.application_nav .application_nav_active{
+    color:#17475d;
+    text-decoration:underline;
+}
+/* APPLICATION (end) */

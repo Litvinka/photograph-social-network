@@ -1,0 +1,236 @@
+/* 
+    Created on : 19.04.2017, 17:44:12
+    Author     : Masha
+*/
+h2{
+    font-size:20px;
+    color:#17475d;
+    font-weight:bold;
+    margin-bottom:20px;
+    margin-left:10%;
+    margin-top:20px;
+    font-family: Segoe Wp;
+}
+.site{
+    display:flex;
+    justify-content:space-between;
+    width:80%;
+    margin-left:10%;
+    margin-bottom:60px;
+}
+.site_left{
+    padding:20px;
+    border:1px solid gray;
+    border-radius:15px;
+    background-color:#ffffff;
+    width:75%;
+}
+.site_right{
+    padding:20px; 
+    border:1px solid gray;
+    border-radius:15px;
+    background-color:#ffffff;
+    width:20%;
+}
+main_nav>ul>li{
+    position:relative;
+}
+.main-nav-ul:hover{
+    display:flex;
+}
+.main-nav-ul{
+    display:none;
+    flex-direction:column;
+    position:absolute;
+    top:57px;
+    background-color:white;
+    border:1px solid gray;
+    border-radius: 10px;
+    padding-bottom: 0px;
+    font-size: 11px;
+    font-weight: bold;
+    z-index:5;
+}
+.main-nav-ul a{
+    text-decoration:none;
+    font-size:12px;
+    color:#17475d;
+}
+.main-nav-ul li{
+    padding-top: 3px;
+    height: 25px;
+    border-top: 1px solid gray;
+    vertical-align: middle;
+    padding-left: 5px;
+    padding-right:5px;
+    color:#17475d;
+}
+.main-nav-ul li:first-child{
+    border:0px;
+}
+/* ПОИСК ПОЛЬЗОВАТЕЛЕЙ */
+.profile-item{
+    margin-bottom:20px;
+    padding:15px;
+    border:1px solid gray;
+    border-radius:15px;
+    background-color:#ffffff;
+    width:100%; 
+    height:110px;
+    display:flex;
+    justify-content:space-between;
+}
+.profile-item figure{
+    display:flex;
+}
+.profile-item figure hgroup a:hover{
+    text-decoration:none;
+}
+.photos_p{
+    border:0px;
+    border-radius:50%;
+    height:80px;
+    width:80px;
+    overflow:hidden;
+    margin-right:15px;
+    background-color:#dfe8ed;
+    border:1px solid gray;
+}
+.profile-item figure img{
+    border:0px;
+}
+.profile_name{
+    color:#17475d;
+    font-size:15px;
+    font-weight:bold;
+    font-family:Segoe WP;
+    margin-bottom:5px;
+    text-decoration:none;
+}
+.profile_city{
+    color:#17475d;
+    font-size:12px;
+    font-weight:bolder;
+    font-family:Segoe WP;
+}
+.profile-item .button{
+    font-size:13px;
+    font-family:Segoe WP;
+    height:30px;
+    width:190px;
+    margin-top:50px;
+}
+.profile-item .button a{
+    color:white;
+    text-decoration:none;
+}
+.buttons .button{
+    margin-top:0px;
+    width:170px;
+}
+/* ПОИСК ПОЛЬЗОВАТЕЛЕЙ (END) */
+
+/* КАТАЛОГ ФОТОГРАФОВ */
+.resume_ph{
+    padding:10px;
+    min-height:100%;
+}
+.resume_ph img{
+    position:relative;
+}
+#catalog_photographs{
+    position:relative;
+    border-radius:20px;
+    background-color: white;
+    border:1px solid gray;
+    padding:20px;
+}
+#catalog_photographs>div>div{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+}
+#catalog_photographs>div>div>div{
+    width:23%;
+    margin:1%;
+    overflow:hidden;
+    min-height:100%;
+    border:1px solid gray;
+    border-radius:15px;
+    position:relative;
+    padding-bottom:50px;
+}
+#catalog_photographs>div>div .empty{
+    width:100%;
+    border:0px;
+    border-radius:0px;
+}
+.resume_ph>a>p{
+    width:100%;
+    border:1px solid gray;
+    border-radius:50%;
+    overflow:hidden;
+    margin-bottom:3px;
+}
+.resume_ph>a>h5{
+    font-size:13px;
+    color:#17475d;
+    font-weight:bold;
+    text-align:center;
+    font-family: Segoe Wp;
+    line-height:13px;
+}
+.resume_ph>a>h4{
+    font-size:14px;
+    color:#17475d;
+    font-weight:bold;
+    font-family: Segoe Wp;
+    line-height:14px;
+    margin-bottom:10px;
+}
+.resume_ph .labl{
+    font-size:12px;
+    color:#666666;
+    text-align:left;
+    margin-bottom:7px;
+}
+.resume_ph .span{
+    color:#17475d;
+}
+.resume_ph>a{
+    text-decoration:none;
+    color:#17475d;
+}
+.resume_ph>p{
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    left:10px;
+}
+.resume_ph .button{
+    width:100%;
+    font-size:12px;
+    font-weight:bold;
+    text-align:center;
+    font-family: Segoe Wp;
+    height:28px;
+}
+.resume_ph>a>h6{
+    margin-top:5px;
+    font-size:11px;
+    color:#666666;
+    font-weight:bold;
+    text-align:center;
+    font-family: Segoe Wp;
+    line-height:12px;
+}
+.resume_ph .icon_p{
+    text-align:right;
+    top:10px;
+}
+.title_h2{
+    display:flex;
+    justify-content:space-between;
+    margin-right:10%;
+}
+/* КАТАЛОГ ФОТОГРАФОВ (END) */
