@@ -206,7 +206,6 @@ display: none;
 	border:10px;
 	border:10px solid #17475d;
 	opacity: 0.69;
-	height:30%;
 	margin-top:30px;
 }
 .form_reg input{
@@ -259,6 +258,7 @@ display: none;
 	text-align: center;
 	font-family: Rounds Black;
 	margin-top:5px;
+    line-height: 32px;
 }
 .center_screen{
 	display:flex;
